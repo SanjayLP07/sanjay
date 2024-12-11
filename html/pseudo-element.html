@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo-class
+
+    </title>
+    <style>
+        body{
+            background-color:rebeccapurple;
+
+        }
+        h1{
+            text-align: center;
+        }
+        a{
+            text-decoration: none;
+            font-size: 30px;
+        }
+        a:link{
+            color: yellow;
+        }
+        a:visited{
+              color: bisque;
+        }
+        a:hover{
+            color: aqua;
+        }
+        a:active{
+            color: red;
+        }
+        #box>p{
+            width: 20%;
+            color: black;
+            background-color: beige;
+            text-align: justify;
+            padding: 10px;
+            font-size: 25px;
+            position: absolute;
+            top: 150px;
+            left: 200px;
+         transition-property: all;
+        transition-duration: 5s;
+         transition-timing-function:linear; 
+        transition-delay: 2s; 
+            /* transition: all 5s linear 2s; */
+           
+        }
+        #box>p:hover{
+            background-color: cadetblue;
+            color: red;
+             transform: rotate(360deg);
+             transform: scaleX(2);
+            transform: scaleY(0.5); 
+            /* transform: scale(2,0.5);   */
+
+            transform: translateX(300px);
+           transform: translateY(100px);
+           transform: translate(300px ,100px); 
+              
+            transform: skewX(-360deg);
+           transform: skewY(-360deg);
+           transform: skew(-360deg,-360deg); 
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        pseudo-classes
+    </h1>
+    <a href="https://www.bmw.com">click here to proceed</a>
+    <div id="box">
+     <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut, esse deserunt officia, necessitatibus dolorem vel a assumenda voluptatibus minima rem voluptas aspernatur illo 
+    </div>
+
+    
+</body>
+</html>

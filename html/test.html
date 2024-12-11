@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            box-sizing: border-box;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            height: 50px;
+            width: 100%;
+            background-color: black;
+            color: bisque;
+            align-items: center;
+        }
+        #contents{
+            width: 50px;
+            display: flex;
+            justify-content:space-around;
+            
+            
+
+        }
+        #contents+#cart{
+            color: blueviolet;
+        }
+        nav>#home{
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div id="home">
+            <h1>
+                home
+            </h1>
+        </div>
+        <div id="contents">
+            <p>
+            services
+            </p>
+            <p>
+                products
+            </p>
+            <h4>
+                history
+            </h4>
+         </div>
+         <div id="cart">
+            <h2>cart</h2>
+         </div>
+    </nav>
+</body>
+</html>

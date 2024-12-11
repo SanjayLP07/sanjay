@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>anmi</title>
+    <style>
+        body{
+            background-color: khaki;
+        }
+        h1{
+            text-align: center;
+            text-decoration: 3px dashed black underline;
+        }
+        h2{
+            position: absolute;
+            top: 200px;
+            left: 450px;
+            font-size: 30px;
+            text-transform: capitalize;
+        }
+        div{
+            display: inline;
+        }
+        
+        div::before{
+            content: "HTML";
+            animation: text 2s linear 0ms infinite normal;
+        }
+        
+        @keyframes text{
+            0%{
+                content: "CSS";
+                color: hotpink;
+            }
+            20%{
+                content: "JavaScript";
+                color: goldenrod;
+            }
+            60%{
+                content: "React JS";
+                color: purple;
+            }
+            80%{
+                content: "Node JS";
+                color: yellowgreen;
+                font-size: 50px;
+
+            }
+            100%{
+                content: "Venila JS";
+                color: blue;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Animation text changiing Task</h1>
+    <h2>I Love <div></div></h2>
+</body>
+</html>

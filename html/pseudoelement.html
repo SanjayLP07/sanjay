@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo element</title>
+    <style>
+        body{
+          background-color: palevioletred;
+          text-align:center ;
+        }
+        #section{
+            height: 400px;
+            width: 100%;
+            background-color: yellow;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        #img{
+            height: 300px;
+            width: 40%;
+            background-image: url("../html/banner_img.png");
+            background-repeat: no-repeat;
+            background-size: 400px,400px;
+            background-attachment: fixed;
+           
+
+        }
+        #para{
+            width: 100%;
+            background-image: url("../html/quality1.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            
+            
+            
+
+        }
+        #para>p{
+            width: 100%;
+            text-align: justify;
+            text-indent: 50px;
+
+        }
+        #para>p::first-letter{
+            color: brown;
+            font-size: 30px;
+
+        }
+        #para>p::first-line{
+            color: black;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        pseudo elements
+    </h1>
+    <div id="section">
+        <div id="img">
+
+        </div>
+        <div id="para">
+        <p>
+            The oldest governing body for taekwondo is the Korea Taekwondo Association (KTA), formed in 1959 through a collaborative effort by representatives from the nine original kwans, or martial arts schools, in Korea. The main international organizational bodies for taekwondo today are various branches of the International Taekwon-Do Federation (ITF), originally founded by Choi Hong-hi in 1966, and the partnership of the Kukkiwon and World Taekwondo (WT, formerly World Taekwondo Federation or WTF), founded in 1972 and 1973 respectively by the Korea Taekwondo Association.[7] Gyeorugi ([kjʌɾuɡi]), a type of full-contact sparring, has been an Olympic event since 2000. In 2018, the South Korean government officially designated taekwondo as Korea's national martial art.[8]
+
+        </p>
+        <ol>
+           <li> button1</li>
+           <li>button2
+           </li>
+        </ol>
+        </div>
+
+    </div>
+</body>
+</html>
